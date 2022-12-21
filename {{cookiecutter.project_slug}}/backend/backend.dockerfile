@@ -2,6 +2,8 @@ FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11
 
 WORKDIR /app/
 
+RUN python --version
+
 # Install Poetry
 RUN curl -sSL https://install.python-poetry.org | POETRY_HOME=/opt/poetry python && \
     cd /usr/local/bin && \
